@@ -1,0 +1,13 @@
+# phantomjs-prebuild doesn't work properly with Alpine-based images
+image: globegitter/ubuntu-nodejs-yarn:16.04-7.10-0.24.5-v1.0.2
+
+pages:
+    script:
+    - npm install --only=dev
+    - npm run docs
+    - mv docs/pages public
+    artifacts:
+      paths:
+      - public
+    only:
+    - master

@@ -1,0 +1,28 @@
+{
+  "name": "barnswallow",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "^1.1.5",
+    "redux": "^4.0.0",
+    "swarm-sdk": "0.0.1",
+    "tokend-sdk": "0.0.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "r-start": "react-scripts start",
+    "r-build": "react-scripts build",
+    "r-test": "react-scripts test --env=jsdom",
+    "r-eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-command": "^0.4.1"
+  }
+}
